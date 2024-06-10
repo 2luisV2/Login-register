@@ -1,0 +1,89 @@
+/* Archivo styles.css del chat */
+
+/* Agrega este bloque de CSS al archivo styles.css del chat */
+.main-content {
+    margin-top: calc(var(--header-height) + 1rem);
+}
+
+
+/* Estilos existentes */
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #972247;
+    font-family: 'Mukta Vaani', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#contenedor {
+    width: 90%;
+    max-width: 600px;
+    background: #fff;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#caja-chat {
+    width: 100%;
+    height: 400px;
+    overflow-y: scroll;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+#datos-chat {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid silver;
+    font-weight: bold;
+}
+
+input[type='text'], textarea {
+    width: 100%;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+input[type='submit'] {
+    width: 100%;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    background: #1c62c4;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+input[type='submit']:hover {
+    background: #1451a1;
+}
+
+@media (min-width: 768px) {
+    #contenedor {
+        width: 60%;
+    }
+}
+
+@media (min-width: 1024px) {
+    #contenedor {
+        width: 40%;
+    }
+}
