@@ -30,8 +30,11 @@
                         </ul>
                     </div>
                     <div class="nav__social">
-                        <ion-icon name="log-out-outline"></ion-icon>
+                        <a href="../../php/cerrar_sesion.php">
+                          <ion-icon name="log-out-outline"></ion-icon>
+                        </a>
                     </div>
+
                 </div>
             </nav>
         </header>

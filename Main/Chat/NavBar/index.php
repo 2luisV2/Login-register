@@ -22,16 +22,19 @@
                     </div>
                     <div class="nav__menu">
                         <ul class="nav__list">
-                            <li class="nav__item"><a href="../../Main.php" class="nav__link active">INICIO</a></li>
-                            <li class="nav__item"><a href="#" class="nav__link">TEST</a></li>
-                            <li class="nav__item"><a href="#" class="nav__link">DIARIO</a></li>
-                            <li class="nav__item"><a href="#" class="nav__link">CHAT</a></li>
-                            <li class="nav__item"><a href="../Artículos/index.php" class="nav__link">NOTICIAS</a></li>
+                            <li class="nav__item"><a href="#" class="nav__link active">INICIO</a></li>
+                            <li class="nav__item"><a href="Test/Main.php" class="nav__link">TEST</a></li>
+                            <li class="nav__item"><a href="Diario/index.php" class="nav__link">DIARIO</a></li>
+                            <li class="nav__item"><a href="Chat/index.php" class="nav__link">CHAT</a></li>
+                            <li class="nav__item"><a href="Artículos/index.php" class="nav__link">NOTICIAS</a></li>
                         </ul>
                     </div>
                     <div class="nav__social">
-                        <ion-icon name="log-out-outline"></ion-icon>
+                        <a href="../../php/cerrar_sesion.php">
+                          <ion-icon name="log-out-outline"></ion-icon>
+                        </a>
                     </div>
+
                 </div>
             </nav>
         </header>
