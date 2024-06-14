@@ -56,6 +56,9 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     function getUserId() {
-        return 1; // Aquí debes obtener el user_id real desde la sesión
+        // Cambia esto para obtener el ID del usuario actualmente logueado
+        return 1; // Asegúrate de que este ID exista en tu base de datos
     }
+    
+    
 });
