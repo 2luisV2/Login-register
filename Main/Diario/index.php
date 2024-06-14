@@ -1,37 +1,40 @@
+<?php
+
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
-  <title>Diario Digital</title>
+  <title>Diario</title>
 </head>
 <body>
   <div class="container">
-    <h1>Diario Digital</h1>
-    <form id="diary-form">
-      <label for="date">Fecha:</label>
-      <input type="text" id="date" name="date" readonly>
-      
-      <label for="title">Título:</label>
-      <input type="text" id="title" name="title" required>
-      
-      <label for="content">Contenido:</label>
-      <textarea id="content" name="content" rows="10" required></textarea>
-      
-      <div class="buttons">
-        <button type="button" id="load-entry">Cargar</button>
-        <button type="button" id="save-entry">Guardar</button>
-        <button type="button" id="delete-entry">Borrar</button>
-      </div>
-    </form>
-    
-    <div class="entries">
-      <h2>Entradas Guardadas</h2>
-      <ul id="entries-list"></ul>
+    <div class="form-container">
+      <form id="diaryForm">
+        <label for="date">Fecha:</label>
+        <input type="text" id="date" name="date" readonly>
+        <label for="entry">Entrada:</label>
+        <textarea id="entry" name="entry" rows="10" required></textarea>
+        <div class="button-container">
+          <button type="button" id="saveButton">Guardar</button>
+          <button type="button" id="loadButton">Cargar</button>
+          <button type="button" id="deleteButton">Borrar</button>
+        </div>
+      </form>
+    </div>
+    <div class="entries-container">
+      <label for="entries">Entradas guardadas:</label>
+      <select id="entries" size="10"></select>
     </div>
   </div>
-  
-  <script src="script.js"></script>
+  <script src="diary.js"></script>
 </body>
 </html>
